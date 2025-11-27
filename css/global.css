@@ -164,7 +164,7 @@ a {
     align-items: center;
   }
   .button-header {
-    visibility: hidden;
+    display: none;
   }
   .izdrove-content {
     padding: 60px 0;
