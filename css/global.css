@@ -3,6 +3,8 @@
   --color-backgound: #333333;
   --color-base: #ffa44f;
   --color-text: #ffd098;
+  --color-text-base: #fcce95;
+  --color-base-background: #212326;
 }
 
 * {
@@ -14,7 +16,7 @@ body {
   margin-top: 50px;
   font-family: "Oswald", sans-serif;
   color: var(--color-text-dark);
-  font-size: var(--text-base);
+  font-size: 16px;
   background-color: var(--color-white);
   line-height: 24px;
 }
@@ -106,6 +108,8 @@ a {
   padding: 10px;
 }
 
+/* Главный блок */
+
 .izdrove {
   padding: 0 16px;
   background-color: #212326;
@@ -183,5 +187,72 @@ a {
   }
   .izdrove-content__actions {
     justify-content: center;
+  }
+}
+
+/* Блок what */
+
+.what {
+  background-color: var(--color-base-background);
+  padding: 0 16px;
+}
+
+.what-content {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.what-content__title {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 45px;
+  line-height: 24px;
+  color: var(--color-text-base);
+}
+
+.what-content__list {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex: 1;
+}
+
+.what-content__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  border: #2c5d71 solid 2px;
+  border-radius: 10px;
+  padding: 16px;
+  color: var(--color-text-base);
+}
+
+.what-item__title {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.what-item__description {
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media (max-width: 880px) {
+  .what-content__list {
+    flex-direction: column;
+  }
+
+  .what-content__title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 45px;
+    line-height: 50px;
+    color: var(--color-text-base);
   }
 }
