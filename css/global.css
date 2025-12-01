@@ -5,6 +5,7 @@
   --color-text: #ffd098;
   --color-text-base: #fcce95;
   --color-base-background: #212326;
+  --color-button-background: rgb(132, 72, 45);
 }
 
 * {
@@ -58,7 +59,7 @@ a {
   display: flex;
   background-color: rgb(132, 72, 45);
   border-radius: 5px;
-  border: var(--color-white) solid 2px;
+  border: var(--color-button-background) solid 2px;
   color: #dfdfe0;
   padding: 12px;
   gap: 8px;
@@ -71,6 +72,10 @@ a {
   background-color: transparent;
   border: #57b5db solid 2px;
   color: #57b5db;
+}
+
+.button:hover {
+  background-color: transparent;
 }
 
 .header {
@@ -97,10 +102,8 @@ a {
 
 .nav-item {
   display: flex;
-  align-items: center;
-  gap: 8px;
   justify-items: center;
-  align-self: center;
+  align-items: center;
 }
 
 .nav-item button {
