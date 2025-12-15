@@ -482,4 +482,11 @@ td {
   .prices-content__list {
     flex-direction: column;
   }
+  .prices-content__title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 45px;
+    line-height: 50px;
+    color: var(--color-text-base);
+  }
 }
